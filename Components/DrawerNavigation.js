@@ -12,6 +12,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 import {DrawerContent} from './DrawerContent';
+import {colors} from '../assets/data';
 
 const HomeStack = createStackNavigator();
 const TrackingStack = createStackNavigator();
@@ -21,7 +22,7 @@ const HomeStackScreen = ({navigation}) => (
   <HomeStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: '#e34',
+        backgroundColor: colors.Primary,
       },
       headerTintColor: '#fff',
       headerTitleStyle: 'bold',
@@ -35,7 +36,7 @@ const HomeStackScreen = ({navigation}) => (
           <Icon.Button
             name="medal"
             size={15}
-            backgroundColor="#e34"
+            backgroundColor={colors.Primary}
             onPress={() => {
               navigation.openDrawer();
             }}
@@ -50,7 +51,7 @@ const TrackingStackScreen = ({navigation}) => (
   <TrackingStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: '#e34',
+        backgroundColor: colors.Primary,
       },
       headerTintColor: '#fff',
       headerTitleStyle: 'bold',
@@ -64,7 +65,7 @@ const TrackingStackScreen = ({navigation}) => (
           <Icon.Button
             name="medal"
             size={15}
-            backgroundColor="#e34"
+            backgroundColor={colors.Primary}
             onPress={() => {
               navigation.openDrawer();
             }}
@@ -78,7 +79,7 @@ const SettingStackScreen = ({navigation}) => (
   <TrackingStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: '#e34',
+        backgroundColor: colors.Primary,
       },
       headerTintColor: '#fff',
       headerTitleStyle: 'bold',
@@ -92,7 +93,7 @@ const SettingStackScreen = ({navigation}) => (
           <Icon.Button
             name="medal"
             size={15}
-            backgroundColor="#e34"
+            backgroundColor={colors.Primary}
             onPress={() => {
               navigation.openDrawer();
             }}
